@@ -1,0 +1,141 @@
+
+<div class="wrapper">
+    <div class="container mt-5 form-right">
+      <div class="container-fluid p-2 text-heading text-center">
+        <h1>Candidate Details</h1>
+      </div>
+    </div> 
+    <div>
+      <a href="#">Back to Home</a>
+    </div>
+      <br>
+      <div class="row">
+        <div class="row col-sm-12 mb-3">
+          <label class="form-label1">Name</label>
+          <input
+            class="form-control"
+            type="text"
+            id="exampleFormControlInput1"
+            placeholder="name"
+          />
+        </div>
+
+        <div class="col-sm-12 mb-3">
+          <label for="exampleFormControlTextarea1">Primary skills</label>
+          <div class="tags-input" data-name="tags-input"></div>
+        </div>
+
+        <div class="col-sm-12 mb-3">
+          <label for="exampleFormControlTextarea1">Secondary skills</label>
+          <div class="tags-input" data-name="tags-input"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 mb-3">
+            <label>Total Experience</label>
+
+            <div class="row">
+              <div class="col-4">
+                <select class="form-select-dropdown" id="selectYear">
+                  <option>Year</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <select class="form-select-dropdown" id="selectMonths">
+                  <option>Months</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <label for="education" class="form-label1">Education</label>
+            <div class="row">
+              <div class="col-4">
+                <input
+                class="form-control-dropdown"
+                  list="educations"
+                  name="education"
+                  id="education"
+                  placeholder="Select Education"
+                />
+                <datalist id="educations">
+                  <option value="Doctorate/PhD"></option>
+                  <option value="Graduation/Diploma"></option>
+                  <option value="12th"></option>
+                  <option value="10th"></option>
+                </datalist>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 mb-3">
+            <label for="exampleFormControlInput1" class="form-label1"
+            >Designation</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Designation"
+              placeholder="Type your Designation"
+            />
+            </div>
+
+            <div class="col-sm-6 mb-3">
+              <label for="noticePeriod" class="form-label1">Notice Period</label>
+              <div class="row">
+                <div class="col-4">
+                  <input
+                  class="form-control-dropdown"
+                  list="noticePeriods"
+                  name="noticePeriod"
+                  id="noticePeriod"
+                  placeholder="Select Notice Period"
+                />
+                <datalist id="noticePeriods">
+                  <option value="15 Days or less"></option>
+                  <option value="1 Month"></option>
+                  <option value="2 Months"></option>
+                  <option value="3 Months"></option>
+                  <option value="More than 3 Months"></option>
+                  <option value="Serving Notice Period"></option>
+                </datalist>
+                  </div>
+                </div>
+              
+
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+          >Location</label>
+          <input
+            type="text"
+            class="form-control"
+            id="location"
+            placeholder="Enter your location"
+          />
+        </div>
+      </div>
+        
+      <div class="form-field">
+        <input
+          type="submit"
+          value="Cancel"
+          class="register"
+          name="cancel"
+          onClick="cancal()"
+        />
+        &nbsp;
+        <input
+          type="submit"
+          value="Submit"
+          class="register"
+          name="submit"
+          onClick="submit()"
+        />
+      </div>  
+
+    </div>
+  </div>
